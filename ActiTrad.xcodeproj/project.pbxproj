@@ -15,6 +15,7 @@
 		69710A8C2C0DEB0D00BF25AA /* ActiTradTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A8B2C0DEB0D00BF25AA /* ActiTradTests.swift */; };
 		69710A962C0DEB0D00BF25AA /* ActiTradUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A952C0DEB0D00BF25AA /* ActiTradUITests.swift */; };
 		69710A982C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */; };
+		69710AA52C0DEDAF00BF25AA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710AA42C0DEDAF00BF25AA /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		69710A912C0DEB0D00BF25AA /* ActiTradUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActiTradUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69710A952C0DEB0D00BF25AA /* ActiTradUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradUITests.swift; sourceTree = "<group>"; };
 		69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69710AA42C0DEDAF00BF25AA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				69710A782C0DEB0C00BF25AA /* ActiTradApp.swift */,
 				69710A7A2C0DEB0C00BF25AA /* ContentView.swift */,
 				69710A7C2C0DEB0C00BF25AA /* Item.swift */,
+				69710AA42C0DEDAF00BF25AA /* Data.swift */,
 				69710A7E2C0DEB0D00BF25AA /* Assets.xcassets */,
 				69710A802C0DEB0D00BF25AA /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 				69710A7B2C0DEB0C00BF25AA /* ContentView.swift in Sources */,
 				69710A7D2C0DEB0C00BF25AA /* Item.swift in Sources */,
 				69710A792C0DEB0C00BF25AA /* ActiTradApp.swift in Sources */,
+				69710AA52C0DEDAF00BF25AA /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
