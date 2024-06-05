@@ -17,6 +17,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainLogoView()
         .modelContainer(for: Item.self, inMemory: true)
 }
