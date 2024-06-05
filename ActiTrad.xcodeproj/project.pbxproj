@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6906B0D82C106738000C7CA1 /* LogoViewFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6906B0D72C106738000C7CA1 /* LogoViewFirst.swift */; };
-		6906B0DA2C1068EB000C7CA1 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6906B0D92C1068EB000C7CA1 /* MapScreen.swift */; };
 		69710A792C0DEB0C00BF25AA /* ActiTradApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A782C0DEB0C00BF25AA /* ActiTradApp.swift */; };
 		69710A7B2C0DEB0C00BF25AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A7A2C0DEB0C00BF25AA /* ContentView.swift */; };
 		69710A7D2C0DEB0C00BF25AA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A7C2C0DEB0C00BF25AA /* Item.swift */; };
@@ -17,6 +15,8 @@
 		69710A8C2C0DEB0D00BF25AA /* ActiTradTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A8B2C0DEB0D00BF25AA /* ActiTradTests.swift */; };
 		69710A962C0DEB0D00BF25AA /* ActiTradUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A952C0DEB0D00BF25AA /* ActiTradUITests.swift */; };
 		69710A982C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */; };
+		69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED1C5B2C10B7A60050046B /* MainLogoView.swift */; };
+		69ED1C5E2C10B8070050046B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED1C5D2C10B8070050046B /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6906B0D72C106738000C7CA1 /* LogoViewFirst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogoViewFirst.swift; path = "../../../../../Desktop/ActiTrad copie/ActiTrad/Views/LogoViewFirst.swift"; sourceTree = "<group>"; };
-		6906B0D92C1068EB000C7CA1 /* MapScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapScreen.swift; path = "../../../../../Desktop/ActiTrad copie/ActiTrad/Views/MapScreen.swift"; sourceTree = "<group>"; };
 		69710A752C0DEB0C00BF25AA /* ActiTrad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiTrad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69710A782C0DEB0C00BF25AA /* ActiTradApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradApp.swift; sourceTree = "<group>"; };
 		69710A7A2C0DEB0C00BF25AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +48,8 @@
 		69710A912C0DEB0D00BF25AA /* ActiTradUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActiTradUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69710A952C0DEB0D00BF25AA /* ActiTradUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradUITests.swift; sourceTree = "<group>"; };
 		69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69ED1C5B2C10B7A60050046B /* MainLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogoView.swift; sourceTree = "<group>"; };
+		69ED1C5D2C10B8070050046B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		6906B0D52C10667C000C7CA1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6906B0D72C106738000C7CA1 /* LogoViewFirst.swift */,
-				6906B0D92C1068EB000C7CA1 /* MapScreen.swift */,
+				69ED1C5B2C10B7A60050046B /* MainLogoView.swift */,
+				69ED1C5D2C10B8070050046B /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,11 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69ED1C5E2C10B8070050046B /* MapView.swift in Sources */,
 				69710A7B2C0DEB0C00BF25AA /* ContentView.swift in Sources */,
 				69710A7D2C0DEB0C00BF25AA /* Item.swift in Sources */,
-				6906B0D82C106738000C7CA1 /* LogoViewFirst.swift in Sources */,
 				69710A792C0DEB0C00BF25AA /* ActiTradApp.swift in Sources */,
-				6906B0DA2C1068EB000C7CA1 /* MapScreen.swift in Sources */,
+				69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +461,7 @@
 				DEVELOPMENT_TEAM = Q59LZPK2UL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "user location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +491,7 @@
 				DEVELOPMENT_TEAM = Q59LZPK2UL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "user location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
