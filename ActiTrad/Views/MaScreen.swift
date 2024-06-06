@@ -158,7 +158,7 @@ struct MaScreen: View {
                         
                         Button(action: {
                             
-                            //page filtre
+                            //Ecran filtre
                             
                         }) {
                             Label("Plus", systemImage: "plus.app.fill")
