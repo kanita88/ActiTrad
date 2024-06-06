@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		696957562C110CE100FC7BE3 /* MaScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696957552C110CE100FC7BE3 /* MaScreen.swift */; };
 		69710A792C0DEB0C00BF25AA /* ActiTradApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A782C0DEB0C00BF25AA /* ActiTradApp.swift */; };
 		69710A7B2C0DEB0C00BF25AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A7A2C0DEB0C00BF25AA /* ContentView.swift */; };
 		69710A7D2C0DEB0C00BF25AA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A7C2C0DEB0C00BF25AA /* Item.swift */; };
@@ -15,8 +16,8 @@
 		69710A8C2C0DEB0D00BF25AA /* ActiTradTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A8B2C0DEB0D00BF25AA /* ActiTradTests.swift */; };
 		69710A962C0DEB0D00BF25AA /* ActiTradUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A952C0DEB0D00BF25AA /* ActiTradUITests.swift */; };
 		69710A982C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */; };
+		69B82DC12C119670006F92E6 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B82DC02C119670006F92E6 /* SheetView.swift */; };
 		69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED1C5B2C10B7A60050046B /* MainLogoView.swift */; };
-		69ED1C5E2C10B8070050046B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED1C5D2C10B8070050046B /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		696957552C110CE100FC7BE3 /* MaScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaScreen.swift; sourceTree = "<group>"; };
 		69710A752C0DEB0C00BF25AA /* ActiTrad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiTrad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69710A782C0DEB0C00BF25AA /* ActiTradApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradApp.swift; sourceTree = "<group>"; };
 		69710A7A2C0DEB0C00BF25AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,8 +50,8 @@
 		69710A912C0DEB0D00BF25AA /* ActiTradUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActiTradUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69710A952C0DEB0D00BF25AA /* ActiTradUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradUITests.swift; sourceTree = "<group>"; };
 		69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69B82DC02C119670006F92E6 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		69ED1C5B2C10B7A60050046B /* MainLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogoView.swift; sourceTree = "<group>"; };
-		69ED1C5D2C10B8070050046B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				69ED1C5B2C10B7A60050046B /* MainLogoView.swift */,
-				69ED1C5D2C10B8070050046B /* MapView.swift */,
+				696957552C110CE100FC7BE3 /* MaScreen.swift */,
+				69B82DC02C119670006F92E6 /* SheetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,10 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69ED1C5E2C10B8070050046B /* MapView.swift in Sources */,
 				69710A7B2C0DEB0C00BF25AA /* ContentView.swift in Sources */,
 				69710A7D2C0DEB0C00BF25AA /* Item.swift in Sources */,
+				696957562C110CE100FC7BE3 /* MaScreen.swift in Sources */,
 				69710A792C0DEB0C00BF25AA /* ActiTradApp.swift in Sources */,
+				69B82DC12C119670006F92E6 /* SheetView.swift in Sources */,
 				69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

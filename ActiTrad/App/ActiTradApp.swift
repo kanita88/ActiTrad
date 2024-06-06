@@ -25,7 +25,7 @@ struct ActiTradApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainLogoView()
+            MaScreen()
         }
         .modelContainer(sharedModelContainer)
     }
