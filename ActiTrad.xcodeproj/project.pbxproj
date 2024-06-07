@@ -18,6 +18,11 @@
 		69710A982C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */; };
 		69B82DC12C119670006F92E6 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B82DC02C119670006F92E6 /* SheetView.swift */; };
 		69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED1C5B2C10B7A60050046B /* MainLogoView.swift */; };
+		EA63FBA42C134F4600623DBF /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA32C134F4600623DBF /* Connection.swift */; };
+		EA63FBA62C134F8000623DBF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA52C134F8000623DBF /* Data.swift */; };
+		EA63FBA82C134FB700623DBF /* Log_In.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA72C134FB700623DBF /* Log_In.swift */; };
+		EA63FBAA2C134FDE00623DBF /* Sign_In.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA92C134FDE00623DBF /* Sign_In.swift */; };
+		EA63FBAC2C13506D00623DBF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBAB2C13506D00623DBF /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,11 @@
 		69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		69B82DC02C119670006F92E6 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		69ED1C5B2C10B7A60050046B /* MainLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogoView.swift; sourceTree = "<group>"; };
+		EA63FBA32C134F4600623DBF /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		EA63FBA52C134F8000623DBF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		EA63FBA72C134FB700623DBF /* Log_In.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_In.swift; sourceTree = "<group>"; };
+		EA63FBA92C134FDE00623DBF /* Sign_In.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign_In.swift; sourceTree = "<group>"; };
+		EA63FBAB2C13506D00623DBF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,7 @@
 			children = (
 				69710A7A2C0DEB0C00BF25AA /* ContentView.swift */,
 				69710A7C2C0DEB0C00BF25AA /* Item.swift */,
+				EA63FBA52C134F8000623DBF /* Data.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -99,9 +110,13 @@
 		6906B0D52C10667C000C7CA1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EA63FBAB2C13506D00623DBF /* MainTabView.swift */,
 				69ED1C5B2C10B7A60050046B /* MainLogoView.swift */,
 				696957552C110CE100FC7BE3 /* MaScreen.swift */,
 				69B82DC02C119670006F92E6 /* SheetView.swift */,
+				EA63FBA32C134F4600623DBF /* Connection.swift */,
+				EA63FBA72C134FB700623DBF /* Log_In.swift */,
+				EA63FBA92C134FDE00623DBF /* Sign_In.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,11 +309,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				69710A7B2C0DEB0C00BF25AA /* ContentView.swift in Sources */,
+				EA63FBA82C134FB700623DBF /* Log_In.swift in Sources */,
 				69710A7D2C0DEB0C00BF25AA /* Item.swift in Sources */,
 				696957562C110CE100FC7BE3 /* MaScreen.swift in Sources */,
 				69710A792C0DEB0C00BF25AA /* ActiTradApp.swift in Sources */,
+				EA63FBAC2C13506D00623DBF /* MainTabView.swift in Sources */,
+				EA63FBAA2C134FDE00623DBF /* Sign_In.swift in Sources */,
 				69B82DC12C119670006F92E6 /* SheetView.swift in Sources */,
 				69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */,
+				EA63FBA42C134F4600623DBF /* Connection.swift in Sources */,
+				EA63FBA62C134F8000623DBF /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
