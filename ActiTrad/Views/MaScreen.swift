@@ -122,7 +122,7 @@ struct MaScreen: View {
                                 Label("Tea ceremony", systemImage: "mug.fill")
                                     .buttonStyle(.plain)
                                     .padding(8)
-                                    .background(Color.colorButton)
+                                    .background(.blue)
                                     .foregroundColor(.white)
                                     .clipShape(Capsule())
                             }
@@ -141,7 +141,7 @@ struct MaScreen: View {
                                 Label("Cheese", systemImage: "heart.fill")
                                     .buttonStyle(.plain)
                                     .padding(10)
-                                    .background(Color.colorButton)
+                                    .background(Color.blue)
                                     .foregroundColor(.white)
                                     .clipShape(Capsule())
                                 
@@ -166,7 +166,7 @@ struct MaScreen: View {
                                 Label("Masque", systemImage: "theatermasks")
                                     .buttonStyle(.plain)
                                     .padding(10)
-                                    .background(Color.colorButton)
+                                    .background(Color.blue)
                                     .foregroundColor(.white)
                                     .clipShape(Capsule())
                             }
@@ -186,7 +186,7 @@ struct MaScreen: View {
                                 Label("Thai danse", systemImage: "flame.fill")
                                     .buttonStyle(.plain)
                                     .padding(10)
-                                    .background(Color.colorButton)
+                                    .background(Color.blue)
                                     .foregroundColor(.white)
                                     .clipShape(Capsule())
                             }
@@ -200,7 +200,7 @@ struct MaScreen: View {
                                 }
                                 .buttonStyle(.plain)
                                 .padding(10)
-                                .background(Color.colorButton)
+                                .background(Color.blue)
                                 .foregroundColor(.white)
                                 .clipShape(Capsule())
                         

@@ -24,7 +24,7 @@ struct EcranFiiltrage: View {
         
         ZStack
         {
-            LinearGradient(gradient: Gradient(colors: [.colorYellowPallette,.colorOrangePallette]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [.clear,.orange]), startPoint: .top, endPoint: .bottom)
             
            
             VStack
@@ -50,7 +50,7 @@ struct EcranFiiltrage: View {
                         Text("$")
                         Slider(value: $priceBudget, in :0...500 )
                             .frame(width: 280)
-                            .accentColor(Color(.colorOrangePallette))
+                            .accentColor(Color(.yellow))
                         Text("$$$")
                     }
                 }
@@ -70,7 +70,7 @@ struct EcranFiiltrage: View {
                         ZStack
                         {
                             Rectangle()
-                                .foregroundStyle(Color(.colorButton))
+                                .foregroundStyle(Color(.blue))
                                 .clipShape(RoundedRectangle(cornerRadius: 5))
                                 .frame(width: 100,height: 50)
                             Text("Accept")
@@ -88,7 +88,7 @@ struct EcranFiiltrage: View {
                         ZStack
                         {
                             Rectangle()
-                                .foregroundStyle(Color(.colorButton))
+                                .foregroundStyle(Color(.blue))
                                 .clipShape(RoundedRectangle(cornerRadius: 5))
                                 .frame(width: 100,height: 50)
                             Text("Cancel")

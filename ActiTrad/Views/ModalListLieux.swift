@@ -86,7 +86,7 @@ struct lieux: View {
                     ZStack
                     {
                         Rectangle()
-                            .foregroundStyle(Color(.colorButton))
+                            .foregroundStyle(Color(.blue))
                             .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
                             .frame(width : 100, height: 30)
                         HStack
@@ -106,7 +106,7 @@ struct lieux: View {
                     ZStack
                     {
                         Rectangle()
-                            .foregroundStyle(Color(.colorButton))
+                            .foregroundStyle(Color(.blue))
                             .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
                             .frame(width : 100, height: 30)
                         HStack
@@ -127,7 +127,7 @@ struct lieux: View {
                     ZStack
                     {
                         Rectangle()
-                            .foregroundStyle(Color(.colorButton))
+                            .foregroundStyle(Color(.blue))
                             .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
                             .frame(width : 100, height: 30)
                         HStack

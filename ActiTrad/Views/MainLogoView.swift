@@ -14,7 +14,7 @@ struct MainLogoView: View {
     var body: some View {
         
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [Color("ColorLight"), Color("ColorDark")]), startPoint: .topLeading, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [Color(.clear), Color(.orange)]), startPoint: .topLeading, endPoint: .bottom)
             
             VStack {
                 Text("ACTITRAD")
