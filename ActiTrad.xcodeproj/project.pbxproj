@@ -23,6 +23,9 @@
 		EA63FBA82C134FB700623DBF /* Log_In.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA72C134FB700623DBF /* Log_In.swift */; };
 		EA63FBAA2C134FDE00623DBF /* Sign_In.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA92C134FDE00623DBF /* Sign_In.swift */; };
 		EA63FBAC2C13506D00623DBF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBAB2C13506D00623DBF /* MainTabView.swift */; };
+		EAE9A0432C1378A600FFE0BA /* EcranFiltrage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */; };
+		EAE9A0452C13794C00FFE0BA /* ModalMapLieu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9A0442C13794C00FFE0BA /* ModalMapLieu.swift */; };
+		EAE9A0472C137B0B00FFE0BA /* ModalListLieux.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9A0462C137B0B00FFE0BA /* ModalListLieux.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		EA63FBA72C134FB700623DBF /* Log_In.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_In.swift; sourceTree = "<group>"; };
 		EA63FBA92C134FDE00623DBF /* Sign_In.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign_In.swift; sourceTree = "<group>"; };
 		EA63FBAB2C13506D00623DBF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcranFiltrage.swift; sourceTree = "<group>"; };
+		EAE9A0442C13794C00FFE0BA /* ModalMapLieu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMapLieu.swift; sourceTree = "<group>"; };
+		EAE9A0462C137B0B00FFE0BA /* ModalListLieux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalListLieux.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,9 @@
 				EA63FBA32C134F4600623DBF /* Connection.swift */,
 				EA63FBA72C134FB700623DBF /* Log_In.swift */,
 				EA63FBA92C134FDE00623DBF /* Sign_In.swift */,
+				EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */,
+				EAE9A0442C13794C00FFE0BA /* ModalMapLieu.swift */,
+				EAE9A0462C137B0B00FFE0BA /* ModalListLieux.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,11 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE9A0452C13794C00FFE0BA /* ModalMapLieu.swift in Sources */,
 				69710A7B2C0DEB0C00BF25AA /* ContentView.swift in Sources */,
 				EA63FBA82C134FB700623DBF /* Log_In.swift in Sources */,
+				EAE9A0472C137B0B00FFE0BA /* ModalListLieux.swift in Sources */,
 				69710A7D2C0DEB0C00BF25AA /* Item.swift in Sources */,
 				696957562C110CE100FC7BE3 /* MaScreen.swift in Sources */,
 				69710A792C0DEB0C00BF25AA /* ActiTradApp.swift in Sources */,
+				EAE9A0432C1378A600FFE0BA /* EcranFiltrage.swift in Sources */,
 				EA63FBAC2C13506D00623DBF /* MainTabView.swift in Sources */,
 				EA63FBAA2C134FDE00623DBF /* Sign_In.swift in Sources */,
 				69B82DC12C119670006F92E6 /* SheetView.swift in Sources */,

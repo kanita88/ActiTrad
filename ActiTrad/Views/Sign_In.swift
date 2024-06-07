@@ -46,7 +46,7 @@ struct Sign_Up: View {
                             } label: {
                                 Text("S'inscrire")
                                     .frame(width: 335, height: 36)
-                                    .background(Color("ColorButton_Log_In"))
+                                    .background(Color("ColorButtons"))
                                     .foregroundStyle(.white)
                             }
                             .navigationDestination(isPresented: $readyToNavigate) {

@@ -12,48 +12,49 @@ struct Connection: View {
         NavigationStack {
             ScrollView {
                 ZStack {
-                        CustomColors.gradient
-                            .ignoresSafeArea(edges: .top)
+                    CustomColors.gradient
+                        .ignoresSafeArea(edges: .top)
+                    VStack {
+                        VStack (spacing: 10){
+                            Image("Masque_Venitien")
+                                .padding(.bottom, 40)
+                            HStack(spacing: 60){
+                                Image("La Fronce")
+                                Image("Thé_Jap")
+                            }
+                            Spacer()
+                            HStack(spacing: 30) {
+                                Image("Henné")
+                                Image("Plaine_Aride")
+                                    .padding(.bottom, 80)
+                            }
+                        }
+                        
                         VStack {
-                            VStack (spacing: 10){
-                                Image("Masque_Venitien")
-                                    .padding(.bottom, 40)
-                                HStack(spacing: 60){
-                                    Image("La Fronce")
-                                    Image("Thé_Jap")
-                                }
-                                Spacer()
-                                HStack(spacing: 30) {
-                                    Image("Henné")
-                                    Image("Plaine_Aride")
-                                        .padding(.bottom, 80)
-                                }
+                            Text("       Pour consulter vos Favoris \nConnectez-vous ou inscrivez-vous")
+                            
+                            NavigationLink(destination : Log_In())
+                            {
+                                Text("Se connecter")
+                                    .frame(width: 335, height: 36)
+                                    .background(Color("ColorButtons"))
+                                    .foregroundStyle(.white)
                             }
                             
-                            VStack {
-                                Text("       Pour consulter vos Favoris \nConnectez-vous ou inscrivez-vous")
-                                
-                                NavigationLink(destination : Log_In())
-                                {
-                                    Text("Se connecter")
-                                        .frame(width: 335, height: 36)
-                                        .background(Color("ColorButton_Log_In"))
-                                        .foregroundStyle(.white)
-                                }
-                                
-                                NavigationLink(destination : Log_In())
-                                {
-                                    Text("Créer un compte")
-                                        .frame(width: 335, height: 36)
-                                        .background(.white)
-                                        .foregroundStyle(.black)
-                                }
+                            NavigationLink(destination : Log_In())
+                            {
+                                Text("Créer un compte")
+                                    .frame(width: 335, height: 36)
+                                    .background(.white)
+                                    .foregroundStyle(.black)
                             }
-                            .padding(.bottom, 50)
-                        }           // Fin VStack
-                        .padding(.top, 10)
-                    }
-            }                   // Fin ZStack
+                        }
+                        .padding(.bottom, 50)
+                    }           // Fin VStack
+                    .padding(.top, 10)
+                    
+                }               // Fin ZStack
+            }
         }                      // Fin NavigationStack
     }
 }
