@@ -10,7 +10,7 @@ import MapKit
 
 struct Location : Identifiable {
     var id = UUID()
-    let name: String
+    var name: String
     var coordinate: CLLocationCoordinate2D
 }
 
@@ -25,7 +25,7 @@ struct MaScreen: View {
     
     @State private var position : MapCameraPosition = .automatic
     @State private var searchTerm = ""
-    @State private var selectLocation: Location? = nil
+    //@State private var selectLocation: Location? = nil
     //@State private var showPopover = false
     @State private var showModal = false
     
