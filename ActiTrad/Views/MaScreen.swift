@@ -8,20 +8,47 @@
 import SwiftUI
 import MapKit
 
-struct Location : Identifiable {
+
+ class LocationIbra: ObservableObject {
+    
+   
+    @Published var name: String
+    @Published var coordinate: CLLocationCoordinate2D
+    
+    init(name: String, coordinate: CLLocationCoordinate2D) {
+        self.name = name
+        self.coordinate = coordinate
+    }
+}
+
+struct Location: Identifiable
+{
     var id = UUID()
     let name: String
-    var coordinate: CLLocationCoordinate2D
+    let coordinate: CLLocationCoordinate2D
 }
+
+
 
 struct MaScreen: View {
     
+   
+    
+   /* let Paris = LocationIbra(name: "Paris", coordinate: CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522))
+    let Tokyo = LocationIbra(name: "Paris", coordinate: CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522))
+    let Rome = LocationIbra(name: "Rome", coordinate: CLLocationCoordinate2D(latitude: 41.918639657910816, longitude: 12.483113871917714))
+    let Bangkok = LocationIbra(name: "Bangkok", coordinate: CLLocationCoordinate2D(latitude: 13.761229251291944, longitude: 100.52529107842545))
+    */
     var locations = [
+        
         Location(name: "Paris", coordinate: CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522)),
         Location(name: "Tokyo", coordinate: CLLocationCoordinate2D(latitude: 35.682194, longitude: 139.762221)),
         Location(name: "Rome", coordinate: CLLocationCoordinate2D(latitude: 41.918639657910816, longitude: 12.483113871917714)),
         Location(name: "Bangkok", coordinate: CLLocationCoordinate2D(latitude: 13.761229251291944, longitude: 100.52529107842545))
     ]
+    
+    var cafe = CLLocationCoordinate2D(latitude: 48.8575487, longitude: 2.3522)
+    
     
     @State private var position : MapCameraPosition = .automatic
     @State private var searchTerm = ""
@@ -40,6 +67,8 @@ struct MaScreen: View {
     
     
     var body: some View {
+        
+      
        NavigationStack
         {
             ZStack {
@@ -47,8 +76,13 @@ struct MaScreen: View {
                 Map(position: $position) {
                     ForEach(locations) { location in
                         Marker(location.name,coordinate: location.coordinate)
+                            
                     }
+
                 }
+                
+                
+              
                 VStack {
                     HStack{
                         Image(systemName: "magnifyingglass")
@@ -57,7 +91,7 @@ struct MaScreen: View {
                             if search.first != nil {
                                 position = MapCameraPosition.region(
                                     MKCoordinateRegion(
-                                        center: CLLocationCoordinate2D(latitude: 35.682194, longitude: 139.762221),
+                                        center: CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522),
                                         span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
                                     ))
                             }
@@ -101,7 +135,6 @@ struct MaScreen: View {
                                         span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
                                     )
                                 )
-                                
                                 showModal.toggle()
                                 
                             }) {
@@ -186,6 +219,10 @@ struct MaScreen: View {
                 
             }
         }
+        
+        
+        //Mark
+        
     }
 }
 

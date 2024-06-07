@@ -56,7 +56,7 @@ struct ModalMapLieu: View {
                             ZStack
                             {
                                 Rectangle()
-                                    .foregroundStyle(Color(.colorButtonBlue))
+                                    .foregroundStyle(Color(.colorButton))
                                     .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
                                     .frame(width : 100, height: 30)
                                 HStack
@@ -76,7 +76,7 @@ struct ModalMapLieu: View {
                             ZStack
                             {
                                 Rectangle()
-                                    .foregroundStyle(Color(.colorBlueButton))
+                                    .foregroundStyle(Color(.colorButton))
                                     .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
                                     .frame(width : 100, height: 30)
                                 HStack
@@ -97,7 +97,7 @@ struct ModalMapLieu: View {
                             ZStack
                             {
                                 Rectangle()
-                                    .foregroundStyle(Color(.colorBlueButton))
+                                    .foregroundStyle(Color(.colorButton))
                                     .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
                                     .frame(width : 100, height: 30)
                                 HStack
@@ -131,9 +131,9 @@ struct ModalMapLieu: View {
                     {
                         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                             Image(systemName: "mappin")
-                                .foregroundStyle(Color(.colorBlueButton))
+                                .foregroundStyle(Color(.colorButton))
                             Text("Adresse")
-                                .foregroundStyle(Color(.colorBlueButton))
+                                .foregroundStyle(Color(.colorButton))
                             
                         })
                     }
@@ -143,9 +143,9 @@ struct ModalMapLieu: View {
                     {
                         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                             Image(systemName: "clock")
-                                .foregroundStyle(Color(.colorBlueButton))
+                                .foregroundStyle(Color(.colorButton))
                             Text("Horaire")
-                                .foregroundStyle(Color(.colorBlueButton))
+                                .foregroundStyle(Color(.colorButton))
                             
                         })
                     }
@@ -154,9 +154,9 @@ struct ModalMapLieu: View {
                     {
                         Button(action: {}, label: {
                             Image(systemName: "globe.europe.africa.fill")
-                                .foregroundStyle(Color(.colorBlueButton))
+                                .foregroundStyle(Color(.colorButton))
                             Text("Site web")
-                                .foregroundStyle(Color(.colorBlueButton))
+                                .foregroundStyle(Color(.colorButton))
                             
                         })
                     }
@@ -165,7 +165,7 @@ struct ModalMapLieu: View {
                 
             }
             .frame(width: 400,height: 600)
-            .background(Color(.colorBackgroundGradian1))
+            .background(Color(.colorOrangePallette))
                
             })
             

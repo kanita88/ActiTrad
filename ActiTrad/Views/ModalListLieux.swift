@@ -43,29 +43,33 @@ struct lieux: View {
         
         VStack(alignment: .leading)
         {
-            Rectangle()
-                .foregroundStyle(Color(.black))
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-                .frame(width : 150,height: 150)
+            ZStack
+            {
+                Rectangle()
+                    .foregroundStyle(Color(.black))
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .frame(width : 150,height: 150)
+               Image("fromage")
+            }
             Text(nomLieux)
                 .font(.system(size: 25))
             HStack
             {
                 Image(systemName: "star.fill")
                     .resizable()
-                    .frame(width: 10,height: 10)
+                    .frame(width: 15,height: 15)
                 Image(systemName: "star.fill")
                     .resizable()
-                    .frame(width: 10,height: 10)
+                    .frame(width: 15,height: 15)
                 Image(systemName: "star.fill")
                     .resizable()
-                    .frame(width: 10,height: 10)
+                    .frame(width: 15,height: 15)
                 Image(systemName: "star.fill")
                     .resizable()
-                    .frame(width: 10,height: 10)
+                    .frame(width: 15,height: 15)
                 Image(systemName: "star.fill")
                     .resizable()
-                    .frame(width: 10,height: 10)
+                    .frame(width: 15,height: 15)
             }
             .foregroundStyle(Color(.yellow))
             

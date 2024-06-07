@@ -8,10 +8,13 @@
 import SwiftUI
 import SwiftData
 
+
 struct EcranFiiltrage: View {
     
+   
     
-    let arrayCountry = ["France","Espagne","Sénégal","Mali","Inde","Japon"]
+    
+    let arrayCountry = ["Paris","Rome","Bangkok","Tokyo"]
     let arrayCity = ["Paris","Madrid","Dakar","Tombouctou","Tokyo","Bangkok","Rome"]
     let arrayCategorize = ["Categorize1","Categorize2","Categorize3"]
     @State var priceBudget:Double = 0
@@ -31,6 +34,7 @@ struct EcranFiiltrage: View {
                     .padding(.bottom)
                     .padding(.leading, -150)
                 //Liste Déroulante
+                //for each pour les pays et catégorie
                 pickerList(arrayName: arrayCountry, nameList: "Country", selection: $selection)
                 pickerList(arrayName: arrayCity, nameList: "City", selection: $selection)
                 pickerList(arrayName: arrayCategorize, nameList: "Categorize", selection: $selection)
@@ -107,7 +111,7 @@ struct EcranFiiltrage: View {
 struct pickerList:View
 {
     var arrayName:[String] = []
-    var nameList:String
+    var nameList:String 
     @Binding var selection:String
     
     var body : some View
@@ -171,5 +175,5 @@ struct pickerList:View
 
 #Preview {
     EcranFiiltrage()
-        .modelContainer(for: Item.self, inMemory: true)
+       // .modelContainer(for: Item.self, inMemory: true)
 }
