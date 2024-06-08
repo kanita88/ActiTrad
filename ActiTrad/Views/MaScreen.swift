@@ -52,10 +52,10 @@ struct MaScreen: View {
                     Image(systemName: "magnifyingglass")
                     //barre de recherche sur le 1 position
                     TextField("chercher votre activités", text: $searchTerm, onCommit: {
-                        if search.first != nil {
+                        if let firstPosition = search.first {
                             position = MapCameraPosition.region(
                                 MKCoordinateRegion(
-                                    center: CLLocationCoordinate2D(latitude: 35.682194, longitude: 139.762221),
+                                    center: firstPosition.coordinate,
                                     span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
                                 ))
                         }
