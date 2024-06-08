@@ -50,7 +50,7 @@ struct Log_In: View {
                                 .foregroundStyle(.white)
                         }
                         .navigationDestination(isPresented: $readyToNavigate) {
-                            EmptyView()
+                            Profile()
                         }
                         .alert("Nom d'utilisateur et mot de de passe requis", isPresented: $showError) {
                             // Montre une erreur quand on appuie sur le bouton si les conditions de celui-ci ne sont pas remplis

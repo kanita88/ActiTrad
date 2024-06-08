@@ -168,7 +168,6 @@ struct MaScreen: View {
                                 .foregroundColor(.white)
                                 .clipShape(Capsule())
                         }
-                        
                     }
                 }
                 .padding(.horizontal)

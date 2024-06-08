@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MainTabView: View {
-
-    var isConnected: Bool = false
+    
+    @State var isConnected: Bool = true
     
     var body: some View {
         TabView {
@@ -17,12 +17,19 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }
-            Log_In()
-                .tabItem {
-                    Label("Favorite", systemImage: "heart")
-                }
             if isConnected == true {
-                    EmptyView()
+                Favorite()
+                    .tabItem {
+                        Label("Favorite", systemImage: "heart")
+                    }
+            } else {
+                Connection()
+                    .tabItem {
+                        Label("Favorite", systemImage: "heart")
+                    }
+            }
+            if isConnected == true {
+                    Profile()
                     .tabItem {
                         Label("Profile", systemImage: "person")
                     }

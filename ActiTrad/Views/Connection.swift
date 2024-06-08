@@ -31,7 +31,7 @@ struct Connection: View {
                         }
                         
                         VStack {
-                            Text("       Pour consulter vos Favoris \nConnectez-vous ou inscrivez-vous")
+                            Text("Pour consulter vos Favoris ou votre profil \n       Connectez-vous ou inscrivez-vous")
                             
                             NavigationLink(destination : Log_In())
                             {
