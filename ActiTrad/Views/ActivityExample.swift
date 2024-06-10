@@ -22,7 +22,7 @@ struct ActivityExample: View {
                     ZStack{
                         Rectangle()
                             .frame(width: 370, height: 130)
-                            .foregroundColor(.yellow)
+                            .foregroundColor(.white)
                             .cornerRadius(15)
                             .padding()
                         HStack{
@@ -38,7 +38,7 @@ struct ActivityExample: View {
                     ZStack{
                         Rectangle()
                             .frame(width: 370, height: 130)
-                            .foregroundColor(.yellow)
+                            .foregroundColor(.white)
                             .cornerRadius(15)
                             .padding()
                         HStack{
@@ -54,7 +54,7 @@ struct ActivityExample: View {
                     ZStack{
                         Rectangle()
                             .frame(width: 370, height: 130)
-                            .foregroundColor(.yellow)
+                            .foregroundColor(.white)
                             .cornerRadius(15)
                             .padding()
                         HStack{
@@ -68,7 +68,7 @@ struct ActivityExample: View {
                     }
                     
                     NavigationLink {
-                        MainTabView()
+                        Log_In()
                     }label: {
                         Text("Suivant")
                     }.tint(.black)

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Description: View {
+    //@Binding var alertDone: Int
+    
     var body: some View {
         NavigationStack{
             ZStack{
