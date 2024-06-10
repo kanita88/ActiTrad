@@ -55,7 +55,7 @@ struct Favorite: View {
                                 }
                                 .buttonStyle(BorderlessButtonStyle())
                                 .sheet(item: $selecteBouton) { acti in
-                                    EmptyView()
+                                    ActivityFr(acti: acti)
                                 }
                                 Button(action: {
                                     

@@ -24,8 +24,7 @@ struct EcranFiiltrage: View {
         
         ZStack
         {
-            LinearGradient(gradient: Gradient(colors: [.clear,.orange]), startPoint: .top, endPoint: .bottom)
-            
+            CustomColors.gradient
            
             VStack
             {

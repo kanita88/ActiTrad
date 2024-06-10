@@ -10,8 +10,10 @@ import SwiftUI
 struct MainTabView: View {
     
     @State var isConnected: Bool = true
+    //@State private var alreadyOnApp = 0
     
     var body: some View {
+        
         TabView {
             MaScreen()
                 .tabItem {
@@ -29,7 +31,7 @@ struct MainTabView: View {
                     }
             }
             if isConnected == true {
-                    Profile()
+                Profile()
                     .tabItem {
                         Label("Profile", systemImage: "person")
                     }
