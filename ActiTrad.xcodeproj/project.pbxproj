@@ -16,6 +16,8 @@
 		69710A8C2C0DEB0D00BF25AA /* ActiTradTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A8B2C0DEB0D00BF25AA /* ActiTradTests.swift */; };
 		69710A962C0DEB0D00BF25AA /* ActiTradUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A952C0DEB0D00BF25AA /* ActiTradUITests.swift */; };
 		69710A982C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */; };
+		69AD09FC2C2C5DC600A6663B /* AddActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD09FB2C2C5DC600A6663B /* AddActivity.swift */; };
+		69AD09FF2C2D4BAA00A6663B /* ActivityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD09FE2C2D4BAA00A6663B /* ActivityClass.swift */; };
 		69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED1C5B2C10B7A60050046B /* MainLogoView.swift */; };
 		EA63FBA42C134F4600623DBF /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA32C134F4600623DBF /* Connection.swift */; };
 		EA63FBA62C134F8000623DBF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA52C134F8000623DBF /* Data.swift */; };
@@ -65,6 +67,8 @@
 		69710A912C0DEB0D00BF25AA /* ActiTradUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActiTradUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69710A952C0DEB0D00BF25AA /* ActiTradUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradUITests.swift; sourceTree = "<group>"; };
 		69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69AD09FB2C2C5DC600A6663B /* AddActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivity.swift; sourceTree = "<group>"; };
+		69AD09FE2C2D4BAA00A6663B /* ActivityClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityClass.swift; sourceTree = "<group>"; };
 		69ED1C5B2C10B7A60050046B /* MainLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogoView.swift; sourceTree = "<group>"; };
 		EA63FBA32C134F4600623DBF /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		EA63FBA52C134F8000623DBF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				EA88B2522C14D390006A10FD /* Description.swift */,
 				EA88B2542C14D447006A10FD /* ActivityExample.swift */,
 				696957552C110CE100FC7BE3 /* MaScreen.swift */,
+				69AD09FB2C2C5DC600A6663B /* AddActivity.swift */,
 				EA88B2562C14D61C006A10FD /* Favorite.swift */,
 				EA88B25E2C14E470006A10FD /* Profile.swift */,
 				EA63FBA32C134F4600623DBF /* Connection.swift */,
@@ -174,6 +179,7 @@
 		69710A772C0DEB0C00BF25AA /* ActiTrad */ = {
 			isa = PBXGroup;
 			children = (
+				69AD09FD2C2D4B4200A6663B /* Models */,
 				6906B0D32C1065EC000C7CA1 /* App */,
 				6906B0D42C10663E000C7CA1 /* Persistence */,
 				6906B0D52C10667C000C7CA1 /* Views */,
@@ -206,6 +212,14 @@
 				69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */,
 			);
 			path = ActiTradUITests;
+			sourceTree = "<group>";
+		};
+		69AD09FD2C2D4B4200A6663B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69AD09FE2C2D4BAA00A6663B /* ActivityClass.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69AD09FC2C2C5DC600A6663B /* AddActivity.swift in Sources */,
 				EAE9A0452C13794C00FFE0BA /* ModalMapLieu.swift in Sources */,
 				EA88B2612C150306006A10FD /* SheetView.swift in Sources */,
 				69710A7B2C0DEB0C00BF25AA /* ContentView.swift in Sources */,
@@ -355,6 +370,7 @@
 				EA88B2572C14D61C006A10FD /* Favorite.swift in Sources */,
 				EA88B25D2C14D866006A10FD /* ActivityJp.swift in Sources */,
 				69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */,
+				69AD09FF2C2D4BAA00A6663B /* ActivityClass.swift in Sources */,
 				EA88B2532C14D390006A10FD /* Description.swift in Sources */,
 				EA63FBA42C134F4600623DBF /* Connection.swift in Sources */,
 				EA63FBA62C134F8000623DBF /* Data.swift in Sources */,

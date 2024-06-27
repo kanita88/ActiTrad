@@ -25,10 +25,10 @@ struct MaScreen: View {
     
     @State private var position : MapCameraPosition = .automatic
     @State private var searchTerm = ""
-    //@State private var selectLocation: Location? = nil
     //@State private var showPopover = false
     @State private var showModal = false
     @State private var readyToNavigate: Bool = true
+    @State private var selectedMarker: Location?
     
     //cherche un endroit sur le map
     var search : [Location] {
@@ -44,10 +44,12 @@ struct MaScreen: View {
         NavigationStack
         {
             ZStack {
+                Text(selectedMarker?.name ?? "no selection")
                 //boucle sur locations et afficher le marker dans le map
                 Map(position: $position) {
                     ForEach(locations) { location in
                         Marker(location.name,coordinate: location.coordinate)
+                            .tag(location.id)
                     }
                 }
                 VStack {
@@ -168,7 +170,7 @@ struct MaScreen: View {
                             {
                                 HStack
                                 {
-                                    Text("Plus")
+                                    Text("Filtre")
                                     Image(systemName: "plus.app.fill")
                                 }
                                 .buttonStyle(.plain)
@@ -179,6 +181,23 @@ struct MaScreen: View {
                                 
                                 
                             }
+                            
+                            NavigationLink(destination: AddActivity())
+                            {
+                                HStack
+                                {
+                                    Text("Ajouter")
+                                    Image(systemName: "plus.app.fill")
+                                }
+                                .buttonStyle(.plain)
+                                .padding(10)
+                                .background(Color("ColorButtons"))
+                                .foregroundColor(.white)
+                                .clipShape(Capsule())
+                                
+                                
+                            }
+                            
                         }
                     }
                     .padding(.horizontal)
