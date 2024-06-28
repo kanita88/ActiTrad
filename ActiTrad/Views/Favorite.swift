@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct FavorisClasse: View {
-  
+    
     /// classe Favoris qui permet d'observer les objets
     class Favoris: ObservableObject {
         /// Affiche les éléments du tableau
-         @Published var favoriteActi: [Country] = []
+        @Published var favoriteActi: [Country] = []
         /// Permet de sélectionner le bouton
-         @Published var selecteBouton: Country? = nil
+        @Published var selecteBouton: Country? = nil
         /// Permet de présenter la vue modale
-         @Published var isPresentingModal = false
+        @Published var isPresentingModal = false
         
         init(selecteBouton: Country? = nil, isPresentingModal: Bool = false) {
             self.selecteBouton = selecteBouton
@@ -34,11 +34,11 @@ struct FavorisClasse: View {
     }
     
     var body: some View {
-       
-            NavigationView {
-                ZStack {
-                    LinearGradient(gradient: Gradient(colors: [Color("ColorShading1"), Color("ColorShading2")]), startPoint: .topLeading, endPoint: .bottom)
-                        .ignoresSafeArea()
+        
+        NavigationView {
+            ZStack {
+                LinearGradient(gradient: Gradient(colors: [Color("ColorShading1"), Color("ColorShading2")]), startPoint: .topLeading, endPoint: .bottom)
+                    .ignoresSafeArea()
                 VStack {
                     List {
                         /// Permet d'afficher les éléments dans la liste
@@ -58,33 +58,33 @@ struct FavorisClasse: View {
                                 .buttonStyle(BorderlessButtonStyle())
                                 .sheet(item: self.$selecteBouton) { acti in
                                     ActivityvueModal(acti: acti)
-                                .sheet(item: $selecteBouton) { acti in
-                                    ActivityFr(acti: acti)
-                                }
-                                Button(action: {
-                                }) {
-                                    Image(systemName: "heart.fill")
-                                        .foregroundColor(.red)
+                                        .sheet(item: $selecteBouton) { acti in
+                                            ActivityvueModal(acti: acti)
+                                        }
+                                    Button(action: {
+                                    }) {
+                                        Image(systemName: "heart.fill")
+                                            .foregroundColor(.red)
+                                        
+                                    }.buttonStyle(BorderlessButtonStyle())
                                     
-                                }.buttonStyle(BorderlessButtonStyle())
-                                  
-                            }
-                        } .onDelete(perform: removeActi)
-                        
-                        
-                    }
-                    .navigationTitle("Favoris")
-                    .scrollContentBackground(.hidden)
-                    .toolbar {
-                        EditButton()
+                                }
+                            }.onDelete(perform: removeActi)
+                            
+                            
+                        }
+                        .navigationTitle("Favoris")
+                        .scrollContentBackground(.hidden)
+                        .toolbar {
+                            EditButton()
+                        }
                     }
                 }
             }
+            
         }
-        
     }
 }
-
 #Preview {
     FavorisClasse()
 }
