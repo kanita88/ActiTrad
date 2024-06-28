@@ -29,7 +29,6 @@ struct MaScreen: View {
     @State private var position : MapCameraPosition = .automatic
     
     /// Le terme de recherche saisi par l'utilisateur.
-    @State var position: MapCameraPosition = .automatic
     @State private var searchTerm = ""
     
     /// Un booléen indiquant si le modal doit être affiché.
@@ -236,8 +235,6 @@ struct MaScreen: View {
                 
             }
         }
-    }
-}
 
 #Preview {
     MaScreen()

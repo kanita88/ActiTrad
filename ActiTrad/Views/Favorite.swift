@@ -69,10 +69,11 @@ struct FavorisClasse: View {
                                     }.buttonStyle(BorderlessButtonStyle())
                                     
                                 }
-                            }.onDelete(perform: removeActi)
+                            }
                             
                             
                         }
+                        .onDelete(perform: removeActi)
                         .navigationTitle("Favoris")
                         .scrollContentBackground(.hidden)
                         .toolbar {

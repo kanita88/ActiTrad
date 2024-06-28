@@ -11,7 +11,7 @@ struct MainTabView: View {
     
     @State var isConnected: Bool = true
     //@State private var alreadyOnApp = 0
-    @State var isConnected: Bool = false
+    
     
     var body: some View {
         
@@ -21,7 +21,7 @@ struct MainTabView: View {
                     Label("Search", systemImage: "magnifyingglass")
                 }
             if isConnected == true {
-                Favorite()
+                FavorisClasse()
                     .tabItem {
                         Label("Favorite", systemImage: "heart")
                     }

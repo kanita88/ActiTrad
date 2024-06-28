@@ -45,106 +45,107 @@ struct EcranFiiltrage: View {
         {
             CustomColors.gradient
            
-            VStack
-            ZStack
-            {
-                CustomColors.gradient
-                VStack
+            VStack {
+                ZStack
                 {
-                    Text("FIilter")
-                        .font(.system(size: 40))
-                        .padding(.bottom)
-                        .padding(.leading, -150)
-                    
-                     //Liste Déroulante
-                     //for each pour les pays et catégorie
-                     pickerListCountry(arrayName: tabCountry, nameList: "Country", selection: $selection)
-                     pickerListCity(arrayName: tabCity, nameList: "City", selection: $selection)
-                     pickerList(arrayName: arrayCategorize, nameList: "Categorize", selection: $selection)
-                     
-                    
-                   
-                    
-                    //Slider
+                    CustomColors.gradient
                     VStack
                     {
-                        Text("Budget \(priceBudget, specifier: "%.0f") $")
+                        Text("FIilter")
+                            .font(.system(size: 40))
+                            .padding(.bottom)
+                            .padding(.leading, -150)
+                        
+                        //Liste Déroulante
+                        //for each pour les pays et catégorie
+                        pickerListCountry(arrayName: tabCountry, nameList: "Country", selection: $selection)
+                        pickerListCity(arrayName: tabCity, nameList: "City", selection: $selection)
+                        pickerList(arrayName: arrayCategorize, nameList: "Categorize", selection: $selection)
                         
                         
-                        HStack
+                        
+                        
+                        //Slider
+                        VStack
                         {
-                            Text("$")
-                            Slider(value: $priceBudget, in :0...500 )
-                                .frame(width: 280)
-                                .accentColor(Color(.yellow))
-                            Text("$$$")
-                        }
-                    }
-                    .padding(.top,40)
-                    
-                    
-                    //Boutton d'actions
-                    HStack(spacing : 50)
-                    {
-                        NavigationLink(destination :MaScreen())
-                        {
+                            Text("Budget \(priceBudget, specifier: "%.0f") $")
                             
-                            ZStack
+                            
+                            HStack
                             {
-                                Rectangle()
-                                    .foregroundStyle(Color(.blue))
-                                    .clipShape(RoundedRectangle(cornerRadius: 5))
-                                    .frame(width: 100,height: 50)
-                                Text("Accept")
-                                    .foregroundStyle(Color(.white))
+                                Text("$")
+                                Slider(value: $priceBudget, in :0...500 )
+                                    .frame(width: 280)
+                                    .accentColor(Color(.yellow))
+                                Text("$$$")
                             }
                         }
+                        .padding(.top,40)
                         
-                        //Boutton valider
-                        /*Button(action:
-                         {
-                         /for country in tabCountry
-                         {
-                         if country.name == String(selection)
-                         {
-                         
-                         }
-                         }
-                         
-                         },
-                         label:
-                         
-                         { /*le contenu dans la navigation link*/
-                         ZStack
-                         {
-                         Rectangle()
-                         .foregroundStyle(Color(.blue))
-                         .clipShape(RoundedRectangle(cornerRadius: 5))
-                         .frame(width: 100,height: 50)
-                         Text("Accept")
-                         .foregroundStyle(Color(.white))
-                         }
-                         })*/
-                        //Boutton Annuler
-                        Button(action:
-                                {/*Changer button par navigation link*/},
-                               
-                               label:
-                                
-                                {/*le contenu dans la navigation link*/
-                            ZStack
+                        
+                        //Boutton d'actions
+                        HStack(spacing : 50)
+                        {
+                            NavigationLink(destination :MaScreen())
                             {
-                                Rectangle()
-                                    .foregroundStyle(Color(.blue))
-                                    .clipShape(RoundedRectangle(cornerRadius: 5))
-                                    .frame(width: 100,height: 50)
-                                Text("Cancel")
-                                    .foregroundStyle(Color(.white))
+                                
+                                ZStack
+                                {
+                                    Rectangle()
+                                        .foregroundStyle(Color(.blue))
+                                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                                        .frame(width: 100,height: 50)
+                                    Text("Accept")
+                                        .foregroundStyle(Color(.white))
+                                }
                             }
-                        })
-                    }.padding(.top, 50)
-                }
-            }.ignoresSafeArea()
+                            
+                            //Boutton valider
+                            /*Button(action:
+                             {
+                             /for country in tabCountry
+                             {
+                             if country.name == String(selection)
+                             {
+                             
+                             }
+                             }
+                             
+                             },
+                             label:
+                             
+                             { /*le contenu dans la navigation link*/
+                             ZStack
+                             {
+                             Rectangle()
+                             .foregroundStyle(Color(.blue))
+                             .clipShape(RoundedRectangle(cornerRadius: 5))
+                             .frame(width: 100,height: 50)
+                             Text("Accept")
+                             .foregroundStyle(Color(.white))
+                             }
+                             })*/
+                            //Boutton Annuler
+                            Button(action:
+                                    {/*Changer button par navigation link*/},
+                                   
+                                   label:
+                                    
+                                    {/*le contenu dans la navigation link*/
+                                ZStack
+                                {
+                                    Rectangle()
+                                        .foregroundStyle(Color(.blue))
+                                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                                        .frame(width: 100,height: 50)
+                                    Text("Cancel")
+                                        .foregroundStyle(Color(.white))
+                                }
+                            })
+                        }.padding(.top, 50)
+                    }
+                }.ignoresSafeArea()
+            }
         }
     }
 }
