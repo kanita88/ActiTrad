@@ -15,7 +15,7 @@ struct ActivityJp: View {
             
             VStack{
                
-                   Image("Thé_Jap")
+                   Image("matcha")
                     .resizable()
                     .frame(width: 300, height: 200)
                 

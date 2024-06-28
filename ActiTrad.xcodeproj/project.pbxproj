@@ -19,6 +19,9 @@
 		69AD09FC2C2C5DC600A6663B /* AddActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD09FB2C2C5DC600A6663B /* AddActivity.swift */; };
 		69AD09FF2C2D4BAA00A6663B /* ActivityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD09FE2C2D4BAA00A6663B /* ActivityClass.swift */; };
 		69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED1C5B2C10B7A60050046B /* MainLogoView.swift */; };
+		EA32D0E22C2C0CF500D07F6D /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32D0E12C2C0CF500D07F6D /* CustomColors.swift */; };
+		EA32D0E42C2C0D8100D07F6D /* UserInfoFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32D0E32C2C0D8100D07F6D /* UserInfoFields.swift */; };
+		EA32D0E62C2C110900D07F6D /* Utilisateur.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32D0E52C2C110900D07F6D /* Utilisateur.swift */; };
 		EA63FBA42C134F4600623DBF /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA32C134F4600623DBF /* Connection.swift */; };
 		EA63FBA62C134F8000623DBF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA52C134F8000623DBF /* Data.swift */; };
 		EA63FBA82C134FB700623DBF /* Log_In.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA72C134FB700623DBF /* Log_In.swift */; };
@@ -27,7 +30,7 @@
 		EA88B2532C14D390006A10FD /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B2522C14D390006A10FD /* Description.swift */; };
 		EA88B2552C14D447006A10FD /* ActivityExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B2542C14D447006A10FD /* ActivityExample.swift */; };
 		EA88B2572C14D61C006A10FD /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B2562C14D61C006A10FD /* Favorite.swift */; };
-		EA88B2592C14D79E006A10FD /* ActivityFr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B2582C14D79E006A10FD /* ActivityFr.swift */; };
+		EA88B2592C14D79E006A10FD /* ActivityvueModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B2582C14D79E006A10FD /* ActivityvueModal.swift */; };
 		EA88B25B2C14D830006A10FD /* ActivityVe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B25A2C14D830006A10FD /* ActivityVe.swift */; };
 		EA88B25D2C14D866006A10FD /* ActivityJp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B25C2C14D866006A10FD /* ActivityJp.swift */; };
 		EA88B25F2C14E470006A10FD /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B25E2C14E470006A10FD /* Profile.swift */; };
@@ -35,6 +38,7 @@
 		EAE9A0432C1378A600FFE0BA /* EcranFiltrage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */; };
 		EAE9A0452C13794C00FFE0BA /* ModalMapLieu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9A0442C13794C00FFE0BA /* ModalMapLieu.swift */; };
 		EAE9A0472C137B0B00FFE0BA /* ModalListLieux.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9A0462C137B0B00FFE0BA /* ModalListLieux.swift */; };
+		F56BCC482C2C012300C6DC24 /* ModelFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BCC472C2C012300C6DC24 /* ModelFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,9 @@
 		69AD09FB2C2C5DC600A6663B /* AddActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivity.swift; sourceTree = "<group>"; };
 		69AD09FE2C2D4BAA00A6663B /* ActivityClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityClass.swift; sourceTree = "<group>"; };
 		69ED1C5B2C10B7A60050046B /* MainLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogoView.swift; sourceTree = "<group>"; };
+		EA32D0E12C2C0CF500D07F6D /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		EA32D0E32C2C0D8100D07F6D /* UserInfoFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoFields.swift; sourceTree = "<group>"; };
+		EA32D0E52C2C110900D07F6D /* Utilisateur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilisateur.swift; sourceTree = "<group>"; };
 		EA63FBA32C134F4600623DBF /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		EA63FBA52C134F8000623DBF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		EA63FBA72C134FB700623DBF /* Log_In.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_In.swift; sourceTree = "<group>"; };
@@ -78,7 +85,7 @@
 		EA88B2522C14D390006A10FD /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		EA88B2542C14D447006A10FD /* ActivityExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityExample.swift; sourceTree = "<group>"; };
 		EA88B2562C14D61C006A10FD /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
-		EA88B2582C14D79E006A10FD /* ActivityFr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFr.swift; sourceTree = "<group>"; };
+		EA88B2582C14D79E006A10FD /* ActivityvueModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityvueModal.swift; sourceTree = "<group>"; };
 		EA88B25A2C14D830006A10FD /* ActivityVe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVe.swift; sourceTree = "<group>"; };
 		EA88B25C2C14D866006A10FD /* ActivityJp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityJp.swift; sourceTree = "<group>"; };
 		EA88B25E2C14E470006A10FD /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 		EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcranFiltrage.swift; sourceTree = "<group>"; };
 		EAE9A0442C13794C00FFE0BA /* ModalMapLieu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMapLieu.swift; sourceTree = "<group>"; };
 		EAE9A0462C137B0B00FFE0BA /* ModalListLieux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalListLieux.swift; sourceTree = "<group>"; };
+		F56BCC472C2C012300C6DC24 /* ModelFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,9 @@
 				69710A7A2C0DEB0C00BF25AA /* ContentView.swift */,
 				69710A7C2C0DEB0C00BF25AA /* Item.swift */,
 				EA63FBA52C134F8000623DBF /* Data.swift */,
+				EA32D0E12C2C0CF500D07F6D /* CustomColors.swift */,
+				EA32D0E32C2C0D8100D07F6D /* UserInfoFields.swift */,
+				EA32D0E52C2C110900D07F6D /* Utilisateur.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -138,6 +149,7 @@
 				69ED1C5B2C10B7A60050046B /* MainLogoView.swift */,
 				EA88B2522C14D390006A10FD /* Description.swift */,
 				EA88B2542C14D447006A10FD /* ActivityExample.swift */,
+				EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */,
 				696957552C110CE100FC7BE3 /* MaScreen.swift */,
 				69AD09FB2C2C5DC600A6663B /* AddActivity.swift */,
 				EA88B2562C14D61C006A10FD /* Favorite.swift */,
@@ -146,10 +158,10 @@
 				EA63FBA72C134FB700623DBF /* Log_In.swift */,
 				EA63FBA92C134FDE00623DBF /* Sign_In.swift */,
 				EA88B2602C150306006A10FD /* SheetView.swift */,
-				EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */,
+				F56BCC472C2C012300C6DC24 /* ModelFunc.swift */,
 				EAE9A0442C13794C00FFE0BA /* ModalMapLieu.swift */,
 				EAE9A0462C137B0B00FFE0BA /* ModalListLieux.swift */,
-				EA88B2582C14D79E006A10FD /* ActivityFr.swift */,
+				EA88B2582C14D79E006A10FD /* ActivityvueModal.swift */,
 				EA88B25A2C14D830006A10FD /* ActivityVe.swift */,
 				EA88B25C2C14D866006A10FD /* ActivityJp.swift */,
 			);
@@ -354,21 +366,25 @@
 			files = (
 				69AD09FC2C2C5DC600A6663B /* AddActivity.swift in Sources */,
 				EAE9A0452C13794C00FFE0BA /* ModalMapLieu.swift in Sources */,
+				EA32D0E42C2C0D8100D07F6D /* UserInfoFields.swift in Sources */,
 				EA88B2612C150306006A10FD /* SheetView.swift in Sources */,
 				69710A7B2C0DEB0C00BF25AA /* ContentView.swift in Sources */,
 				EA63FBA82C134FB700623DBF /* Log_In.swift in Sources */,
 				EAE9A0472C137B0B00FFE0BA /* ModalListLieux.swift in Sources */,
 				69710A7D2C0DEB0C00BF25AA /* Item.swift in Sources */,
+				EA32D0E62C2C110900D07F6D /* Utilisateur.swift in Sources */,
 				696957562C110CE100FC7BE3 /* MaScreen.swift in Sources */,
+				F56BCC482C2C012300C6DC24 /* ModelFunc.swift in Sources */,
 				69710A792C0DEB0C00BF25AA /* ActiTradApp.swift in Sources */,
 				EAE9A0432C1378A600FFE0BA /* EcranFiltrage.swift in Sources */,
 				EA63FBAC2C13506D00623DBF /* MainTabView.swift in Sources */,
 				EA88B2552C14D447006A10FD /* ActivityExample.swift in Sources */,
 				EA88B25F2C14E470006A10FD /* Profile.swift in Sources */,
-				EA88B2592C14D79E006A10FD /* ActivityFr.swift in Sources */,
+				EA88B2592C14D79E006A10FD /* ActivityvueModal.swift in Sources */,
 				EA63FBAA2C134FDE00623DBF /* Sign_In.swift in Sources */,
 				EA88B2572C14D61C006A10FD /* Favorite.swift in Sources */,
 				EA88B25D2C14D866006A10FD /* ActivityJp.swift in Sources */,
+				EA32D0E22C2C0CF500D07F6D /* CustomColors.swift in Sources */,
 				69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */,
 				69AD09FF2C2D4BAA00A6663B /* ActivityClass.swift in Sources */,
 				EA88B2532C14D390006A10FD /* Description.swift in Sources */,

@@ -7,14 +7,22 @@
 
 import SwiftUI
 
-struct Sign_Up: View {
+struct Sign_In: View {
     
-    @State private var userName: String = ""
-    @State private var password: String = ""
-    @State private var verifyPassword: String = ""
-    @State private var readyToNavigate: Bool = false
+    @State private var users: [Utilisateur] = []
+    @State private var userName = ""
+    @State private var password = ""
+    @State private var verifiedPassword = ""
+    @State private var navigateToNewView = false
     @State private var showError: Bool = false
     @State private var errorMessage: String = ""
+    var status: Bool = false
+    var userAlreadyExists: Bool {
+              return users.contains { $0.userName == userName }
+          }
+    var isButtonDisabled: Bool {
+        return userName.isEmpty || verifiedPassword.isEmpty || password.isEmpty || verifiedPassword != password
+    }
     
     var body: some View {
         NavigationStack {
@@ -29,51 +37,57 @@ struct Sign_Up: View {
                     }
                     .padding(.bottom, 60)
                     
-                    VStack {
                     VStack (alignment: .leading){
-                        // Appel de la structure qui défini les TextField (voir fichier "Data")
-                        UserInfoFields(fieldName: "Nom", text: $userName)
-                        UserInfoFields(fieldName: "Mot de Passe", text: $password)
-                        UserInfoFields(fieldName: "Vérifier le mot de passe", text: $verifyPassword)
+                        UserInfoFields(fieldName: "Nom d'utilisateur", text: $userName)
+                        
+                        SecureFields(fieldName: "Mot de Passe", text: $password)
+                            
+                        SecureFields(fieldName: "Vérifier le mot de passe", text: $verifiedPassword)
                     }
+                    Button {
+                        errorMessages()
                         
-                        Group {
-                            Button {
-                                
-                                // Appel de la fonction errorMessage
-                                
-                                errorMessages()
-                            } label: {
-                                Text("S'inscrire")
-                                    .frame(width: 335, height: 36)
-                                    .background(Color("ColorButtons"))
-                                    .foregroundStyle(.white)
-                            }
-                            .navigationDestination(isPresented: $readyToNavigate) {
-                                EmptyView()
-                            }
-                            .alert(errorMessage, isPresented: $showError) {                 // Affiche le message correspondant par rapport aux conditions remplis ou non de la fonction errorMessage
-                            }
-                            .padding()
+                        if !userName.isEmpty && !password.isEmpty && verifiedPassword == password && !userAlreadyExists {
+                            let newAccount = Utilisateur(userName: userName, password: password, status: true)
+                            users.append(newAccount)
+                            userName = ""
+                            password = ""
+                            verifiedPassword = ""
+                            navigateToNewView = true
+                            print(users, newAccount.status)
                         }
-                        
-                        HStack {
-                            Text("Vous avez déjà un compte ?")
-                            NavigationLink(destination: Log_In()) {
-                                Text("Connexion")
-                                    .foregroundStyle(.blue)
-                                    .underline(true, color: .blue)
-                            }
+                    } label: {
+                        Text("S'inscrire")
+                            .frame(width: 335, height: 36)
+                            .background(Color("ColorButtons"))
+                            .foregroundStyle(.white)
+                    }
+                    .alert(errorMessage, isPresented: $showError) {                 // Affiche le message correspondant par rapport aux conditions remplis ou non de la fonction errorMessage
+                    }
+                    
+                    .navigationDestination(isPresented: $navigateToNewView) {
+                        MainTabView()
+                            .navigationBarBackButtonHidden(true)
+                    }
+                    .padding()
+                    
+                    HStack {
+                        Text("Vous avez déjà un compte ?")
+                        NavigationLink(destination: Log_In()) {
+                            Text("Connexion")
+                                .foregroundStyle(.blue)
+                                .underline(true, color: .blue)
                         }
-                        .padding(.bottom, 100)
-                    }        // Fin seconde Vstack
-                }           // Fin VStack principale
-            }              //Fin ZStack
-        }                 // Fin NavigationStack
+                    }
+                    .padding(.bottom, 100)
+                }
+            }
+        }
     }
+
 }
 
-extension Sign_Up {
+extension Sign_In {
     
     // Fonction qui change le message de l'alerte en fonction des champs qui ont été remplies ou non
     
@@ -84,18 +98,18 @@ extension Sign_Up {
         } else if password.isEmpty {
             errorMessage = "Mot de passe requis"
             showError = true
-        } else if verifyPassword.isEmpty {
+        } else if verifiedPassword.isEmpty {
             errorMessage = "Veuillez vérifier votre mot de passe"
             showError = true
-        } else if password != verifyPassword {
+        } else if password != verifiedPassword {
             errorMessage = "Les mots de passe ne correspondent pas"
             showError = true
         } else {
-            readyToNavigate = true
+            navigateToNewView = true
         }
     }
 }
 
 #Preview {
-    Sign_Up()
+    Sign_In()
 }

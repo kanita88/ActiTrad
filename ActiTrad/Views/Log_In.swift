@@ -99,7 +99,7 @@ struct Log_In: View {
                     
                     HStack {
                         Text("Vous n'avez pas de compte ?")
-                        NavigationLink (destination: Sign_Up()) {
+                        NavigationLink (destination: Sign_In()) {
                             Text("S'enregistrer")
                                 .foregroundStyle(.blue)
                                 .underline(true, color: .blue)

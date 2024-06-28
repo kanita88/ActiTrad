@@ -29,9 +29,13 @@ struct MaScreen: View {
     @State private var position : MapCameraPosition = .automatic
     
     /// Le terme de recherche saisi par l'utilisateur.
+    @State var position: MapCameraPosition = .automatic
     @State private var searchTerm = ""
     
     /// Un booléen indiquant si le modal doit être affiché.
+    @State var coco = ""
+    //@State private var selectLocation: Location? = nil
+    //@State private var showPopover = false
     @State private var showModal = false
     
     /// Un booléen indiquant si la navigation est prête.
@@ -57,11 +61,14 @@ struct MaScreen: View {
                 Text(selectedMarker?.name ?? "no selection")
                 //boucle sur locations et afficher le marker dans le map
                 Map(position: $position) {
+                    
                     ForEach(locations) { location in
                         Marker(location.name,coordinate: location.coordinate)
                             .tag(location.id)
                     }
                 }
+                
+                Text(coco)
                 VStack {
                     HStack{
                         Image(systemName: "magnifyingglass")
@@ -180,6 +187,17 @@ struct MaScreen: View {
                             {
                                 HStack
                                 {
+                                    Text("Plus")
+                                    Image(systemName: "plus.app.fill")
+                                }
+                                .buttonStyle(.plain)
+                                .padding(10)
+                                .background(Color("ColorButtons"))
+                                .foregroundColor(.white)
+                                .clipShape(Capsule())
+                                
+                                
+                            }
                                     Text("Filtre")
                                     Image(systemName: "plus.app.fill")
                                 }

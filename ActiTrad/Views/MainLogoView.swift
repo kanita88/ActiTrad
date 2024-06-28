@@ -60,6 +60,9 @@ struct MainLogoView: View {
                 .onAppear {
                     isShowing.toggle()
                 }
+                //            .onTapGesture {
+                //                animationDone = 1
+                //            }
                 Spacer()
                 
                 NavigationLink(destination: Description())
