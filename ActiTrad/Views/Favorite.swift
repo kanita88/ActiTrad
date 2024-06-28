@@ -58,6 +58,8 @@ struct FavorisClasse: View {
                                 .buttonStyle(BorderlessButtonStyle())
                                 .sheet(item: self.$selecteBouton) { acti in
                                     ActivityvueModal(acti: acti)
+                                .sheet(item: $selecteBouton) { acti in
+                                    ActivityFr(acti: acti)
                                 }
                                 Button(action: {
                                 }) {

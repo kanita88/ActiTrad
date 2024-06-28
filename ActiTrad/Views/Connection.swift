@@ -41,7 +41,7 @@ struct Connection: View {
                                     .foregroundStyle(.white)
                             }
                             
-                            NavigationLink(destination : Log_In())
+                            NavigationLink(destination : Sign_In())
                             {
                                 Text("Créer un compte")
                                     .frame(width: 335, height: 36)
