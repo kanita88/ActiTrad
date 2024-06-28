@@ -9,8 +9,7 @@ import SwiftUI
 
 struct MainTabView: View {
     
-    @State var isConnected: Bool = true
-    //@State private var alreadyOnApp = 0
+    @State var isConnected: Bool = false
     
     var body: some View {
         
