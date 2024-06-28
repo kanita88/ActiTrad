@@ -17,6 +17,9 @@
 		69710A962C0DEB0D00BF25AA /* ActiTradUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A952C0DEB0D00BF25AA /* ActiTradUITests.swift */; };
 		69710A982C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */; };
 		69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED1C5B2C10B7A60050046B /* MainLogoView.swift */; };
+		EA32D0E22C2C0CF500D07F6D /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32D0E12C2C0CF500D07F6D /* CustomColors.swift */; };
+		EA32D0E42C2C0D8100D07F6D /* UserInfoFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32D0E32C2C0D8100D07F6D /* UserInfoFields.swift */; };
+		EA32D0E62C2C110900D07F6D /* Utilisateur.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32D0E52C2C110900D07F6D /* Utilisateur.swift */; };
 		EA63FBA42C134F4600623DBF /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA32C134F4600623DBF /* Connection.swift */; };
 		EA63FBA62C134F8000623DBF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA52C134F8000623DBF /* Data.swift */; };
 		EA63FBA82C134FB700623DBF /* Log_In.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63FBA72C134FB700623DBF /* Log_In.swift */; };
@@ -66,6 +69,9 @@
 		69710A952C0DEB0D00BF25AA /* ActiTradUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradUITests.swift; sourceTree = "<group>"; };
 		69710A972C0DEB0D00BF25AA /* ActiTradUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiTradUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		69ED1C5B2C10B7A60050046B /* MainLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogoView.swift; sourceTree = "<group>"; };
+		EA32D0E12C2C0CF500D07F6D /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		EA32D0E32C2C0D8100D07F6D /* UserInfoFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoFields.swift; sourceTree = "<group>"; };
+		EA32D0E52C2C110900D07F6D /* Utilisateur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilisateur.swift; sourceTree = "<group>"; };
 		EA63FBA32C134F4600623DBF /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		EA63FBA52C134F8000623DBF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		EA63FBA72C134FB700623DBF /* Log_In.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_In.swift; sourceTree = "<group>"; };
@@ -123,6 +129,9 @@
 				69710A7A2C0DEB0C00BF25AA /* ContentView.swift */,
 				69710A7C2C0DEB0C00BF25AA /* Item.swift */,
 				EA63FBA52C134F8000623DBF /* Data.swift */,
+				EA32D0E12C2C0CF500D07F6D /* CustomColors.swift */,
+				EA32D0E32C2C0D8100D07F6D /* UserInfoFields.swift */,
+				EA32D0E52C2C110900D07F6D /* Utilisateur.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -339,11 +348,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE9A0452C13794C00FFE0BA /* ModalMapLieu.swift in Sources */,
+				EA32D0E42C2C0D8100D07F6D /* UserInfoFields.swift in Sources */,
 				EA88B2612C150306006A10FD /* SheetView.swift in Sources */,
 				69710A7B2C0DEB0C00BF25AA /* ContentView.swift in Sources */,
 				EA63FBA82C134FB700623DBF /* Log_In.swift in Sources */,
 				EAE9A0472C137B0B00FFE0BA /* ModalListLieux.swift in Sources */,
 				69710A7D2C0DEB0C00BF25AA /* Item.swift in Sources */,
+				EA32D0E62C2C110900D07F6D /* Utilisateur.swift in Sources */,
 				696957562C110CE100FC7BE3 /* MaScreen.swift in Sources */,
 				69710A792C0DEB0C00BF25AA /* ActiTradApp.swift in Sources */,
 				EAE9A0432C1378A600FFE0BA /* EcranFiltrage.swift in Sources */,
@@ -354,6 +365,7 @@
 				EA63FBAA2C134FDE00623DBF /* Sign_In.swift in Sources */,
 				EA88B2572C14D61C006A10FD /* Favorite.swift in Sources */,
 				EA88B25D2C14D866006A10FD /* ActivityJp.swift in Sources */,
+				EA32D0E22C2C0CF500D07F6D /* CustomColors.swift in Sources */,
 				69ED1C5C2C10B7A60050046B /* MainLogoView.swift in Sources */,
 				EA88B2532C14D390006A10FD /* Description.swift in Sources */,
 				EA63FBA42C134F4600623DBF /* Connection.swift in Sources */,
