@@ -43,7 +43,6 @@ struct MaScreen: View {
     /// Le marqueur de localisation sélectionné, le cas échéant.
     @State private var selectedMarker: Location?
     
-    //cherche un endroit sur le map
     var search : [Location] {
         if searchTerm.isEmpty {
             return locations
@@ -57,17 +56,12 @@ struct MaScreen: View {
         NavigationStack
         {
             ZStack {
-                Text(selectedMarker?.name ?? "no selection")
                 //boucle sur locations et afficher le marker dans le map
                 Map(position: $position) {
-                    
                     ForEach(locations) { location in
                         Marker(location.name,coordinate: location.coordinate)
-                            .tag(location.id)
                     }
                 }
-                
-                Text(coco)
                 VStack {
                     HStack{
                         Image(systemName: "magnifyingglass")
@@ -197,34 +191,6 @@ struct MaScreen: View {
                                 
                                 
                             }
-                                    Text("Filtre")
-                                    Image(systemName: "plus.app.fill")
-                                }
-                                .buttonStyle(.plain)
-                                .padding(10)
-                                .background(Color("ColorButtons"))
-                                .foregroundColor(.white)
-                                .clipShape(Capsule())
-                                
-                                
-                            }
-                            
-                            NavigationLink(destination: AddActivity())
-                            {
-                                HStack
-                                {
-                                    Text("Ajouter")
-                                    Image(systemName: "plus.app.fill")
-                                }
-                                .buttonStyle(.plain)
-                                .padding(10)
-                                .background(Color("ColorButtons"))
-                                .foregroundColor(.white)
-                                .clipShape(Capsule())
-                                
-                                
-                            }
-                            
                         }
                     }
                     .padding(.horizontal)
@@ -235,9 +201,7 @@ struct MaScreen: View {
                 
             }
         }
-
-#Preview {
-    MaScreen()
+    }
 }
 
 extension CLLocationCoordinate2D: Identifiable {
@@ -245,3 +209,8 @@ extension CLLocationCoordinate2D: Identifiable {
         "\(latitude)-\(longitude)"
     }
 }
+
+#Preview {
+    MaScreen()
+}
+
