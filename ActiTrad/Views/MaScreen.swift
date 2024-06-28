@@ -8,14 +8,16 @@
 import SwiftUI
 import MapKit
 
+/// Une structure représentant une localisation géographique avec un identifiant, un nom et des coordonnées.
 struct Location : Identifiable {
     var id = UUID()
     var name: String
     var coordinate: CLLocationCoordinate2D
 }
 
+/// Une vue qui affiche une carte avec différentes localisations et permet à l'utilisateur d'interagir avec elles.
 struct MaScreen: View {
-    
+    /// Un tableau de localisations prédéfinies à afficher sur la carte.
     var locations = [
         Location(name: "Paris", coordinate: CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522)),
         Location(name: "Tokyo", coordinate: CLLocationCoordinate2D(latitude: 35.682194, longitude: 139.762221)),
@@ -23,11 +25,19 @@ struct MaScreen: View {
         Location(name: "Bangkok", coordinate: CLLocationCoordinate2D(latitude: 13.761229251291944, longitude: 100.52529107842545))
     ]
     
+    /// La position actuelle de la caméra de la carte.
     @State private var position : MapCameraPosition = .automatic
+    
+    /// Le terme de recherche saisi par l'utilisateur.
     @State private var searchTerm = ""
-    //@State private var showPopover = false
+    
+    /// Un booléen indiquant si le modal doit être affiché.
     @State private var showModal = false
+    
+    /// Un booléen indiquant si la navigation est prête.
     @State private var readyToNavigate: Bool = true
+    
+    /// Le marqueur de localisation sélectionné, le cas échéant.
     @State private var selectedMarker: Location?
     
     //cherche un endroit sur le map
