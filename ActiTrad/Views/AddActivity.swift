@@ -26,7 +26,7 @@ struct AddActivity: View {
     /// Le prix de l'activité en cours de saisie.
     @State private var price: String = ""
 
-    
+    /// Note: Cette vue utilise un `VStack` pour organiser son contenu verticalement et un `Form` pour le formulaire d'ajout.
     var body: some View {
         VStack {
             Form {
