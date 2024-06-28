@@ -32,9 +32,6 @@ struct MaScreen: View {
     @State private var searchTerm = ""
     
     /// Un booléen indiquant si le modal doit être affiché.
-    @State var coco = ""
-    //@State private var selectLocation: Location? = nil
-    //@State private var showPopover = false
     @State private var showModal = false
     
     /// Un booléen indiquant si la navigation est prête.
@@ -43,6 +40,7 @@ struct MaScreen: View {
     /// Le marqueur de localisation sélectionné, le cas échéant.
     @State private var selectedMarker: Location?
     
+    //cherche un endroit sur le map
     var search : [Location] {
         if searchTerm.isEmpty {
             return locations
@@ -56,10 +54,12 @@ struct MaScreen: View {
         NavigationStack
         {
             ZStack {
+                Text(selectedMarker?.name ?? "no selection")
                 //boucle sur locations et afficher le marker dans le map
                 Map(position: $position) {
                     ForEach(locations) { location in
                         Marker(location.name,coordinate: location.coordinate)
+                            .tag(location.id)
                     }
                 }
                 VStack {
@@ -180,7 +180,7 @@ struct MaScreen: View {
                             {
                                 HStack
                                 {
-                                    Text("Plus")
+                                    Text("Filtre")
                                     Image(systemName: "plus.app.fill")
                                 }
                                 .buttonStyle(.plain)
@@ -191,6 +191,23 @@ struct MaScreen: View {
                                 
                                 
                             }
+                            
+                            NavigationLink(destination: AddActivity())
+                            {
+                                HStack
+                                {
+                                    Text("Ajouter")
+                                    Image(systemName: "plus.app.fill")
+                                }
+                                .buttonStyle(.plain)
+                                .padding(10)
+                                .background(Color("ColorButtons"))
+                                .foregroundColor(.white)
+                                .clipShape(Capsule())
+                                
+                                
+                            }
+                            
                         }
                     }
                     .padding(.horizontal)
@@ -213,4 +230,3 @@ extension CLLocationCoordinate2D: Identifiable {
 #Preview {
     MaScreen()
 }
-
