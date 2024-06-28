@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ActivityFr: View {
-    
+struct ActivityvueModal: View {
+    /// Déclaration de la variable qui récupère le tableau Country
     var acti: Country
     var body: some View {
+        
         ZStack{
             CustomColors.gradient
             
             VStack{
-                
                 
                 Image(acti.picture)
                     .resizable()
@@ -35,8 +35,6 @@ struct ActivityFr: View {
                 }
                 Text(acti.adress)
                 Text(acti.phonenumber)
-                
-                
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                     Text("Réserver")

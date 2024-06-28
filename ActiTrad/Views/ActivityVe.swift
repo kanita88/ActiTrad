@@ -15,7 +15,7 @@ struct ActivityVe: View {
             
             VStack{
                
-                   Image("Masque_Venitien")
+                Image("venetian-mask")
                     .resizable()
                     .frame(width: 300, height: 200)
                 

@@ -25,7 +25,7 @@
 		EA88B2532C14D390006A10FD /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B2522C14D390006A10FD /* Description.swift */; };
 		EA88B2552C14D447006A10FD /* ActivityExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B2542C14D447006A10FD /* ActivityExample.swift */; };
 		EA88B2572C14D61C006A10FD /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B2562C14D61C006A10FD /* Favorite.swift */; };
-		EA88B2592C14D79E006A10FD /* ActivityFr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B2582C14D79E006A10FD /* ActivityFr.swift */; };
+		EA88B2592C14D79E006A10FD /* ActivityvueModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B2582C14D79E006A10FD /* ActivityvueModal.swift */; };
 		EA88B25B2C14D830006A10FD /* ActivityVe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B25A2C14D830006A10FD /* ActivityVe.swift */; };
 		EA88B25D2C14D866006A10FD /* ActivityJp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B25C2C14D866006A10FD /* ActivityJp.swift */; };
 		EA88B25F2C14E470006A10FD /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88B25E2C14E470006A10FD /* Profile.swift */; };
@@ -74,7 +74,7 @@
 		EA88B2522C14D390006A10FD /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		EA88B2542C14D447006A10FD /* ActivityExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityExample.swift; sourceTree = "<group>"; };
 		EA88B2562C14D61C006A10FD /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
-		EA88B2582C14D79E006A10FD /* ActivityFr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFr.swift; sourceTree = "<group>"; };
+		EA88B2582C14D79E006A10FD /* ActivityvueModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityvueModal.swift; sourceTree = "<group>"; };
 		EA88B25A2C14D830006A10FD /* ActivityVe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVe.swift; sourceTree = "<group>"; };
 		EA88B25C2C14D866006A10FD /* ActivityJp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityJp.swift; sourceTree = "<group>"; };
 		EA88B25E2C14E470006A10FD /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */,
 				EAE9A0442C13794C00FFE0BA /* ModalMapLieu.swift */,
 				EAE9A0462C137B0B00FFE0BA /* ModalListLieux.swift */,
-				EA88B2582C14D79E006A10FD /* ActivityFr.swift */,
+				EA88B2582C14D79E006A10FD /* ActivityvueModal.swift */,
 				EA88B25A2C14D830006A10FD /* ActivityVe.swift */,
 				EA88B25C2C14D866006A10FD /* ActivityJp.swift */,
 			);
@@ -350,7 +350,7 @@
 				EA63FBAC2C13506D00623DBF /* MainTabView.swift in Sources */,
 				EA88B2552C14D447006A10FD /* ActivityExample.swift in Sources */,
 				EA88B25F2C14E470006A10FD /* Profile.swift in Sources */,
-				EA88B2592C14D79E006A10FD /* ActivityFr.swift in Sources */,
+				EA88B2592C14D79E006A10FD /* ActivityvueModal.swift in Sources */,
 				EA63FBAA2C134FDE00623DBF /* Sign_In.swift in Sources */,
 				EA88B2572C14D61C006A10FD /* Favorite.swift in Sources */,
 				EA88B25D2C14D866006A10FD /* ActivityJp.swift in Sources */,
