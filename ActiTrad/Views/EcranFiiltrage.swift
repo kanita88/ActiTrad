@@ -42,9 +42,6 @@ struct EcranFiiltrage: View {
         Categorize(name: "Catégorie 5"),
     ]
     
-    
-    
-    
     var body: some View {
         
         NavigationStack
