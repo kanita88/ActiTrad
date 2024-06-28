@@ -23,8 +23,10 @@ struct MaScreen: View {
         Location(name: "Bangkok", coordinate: CLLocationCoordinate2D(latitude: 13.761229251291944, longitude: 100.52529107842545))
     ]
     
-    @State private var position : MapCameraPosition = .automatic
+    @State var position: MapCameraPosition = .automatic
     @State private var searchTerm = ""
+    @State var coco = ""
+    //@State private var selectLocation: Location? = nil
     //@State private var showPopover = false
     @State private var showModal = false
     @State private var readyToNavigate: Bool = true
@@ -47,11 +49,14 @@ struct MaScreen: View {
                 Text(selectedMarker?.name ?? "no selection")
                 //boucle sur locations et afficher le marker dans le map
                 Map(position: $position) {
+                    
                     ForEach(locations) { location in
                         Marker(location.name,coordinate: location.coordinate)
                             .tag(location.id)
                     }
                 }
+                
+                Text(coco)
                 VStack {
                     HStack{
                         Image(systemName: "magnifyingglass")

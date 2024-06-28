@@ -38,6 +38,7 @@
 		EAE9A0432C1378A600FFE0BA /* EcranFiltrage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */; };
 		EAE9A0452C13794C00FFE0BA /* ModalMapLieu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9A0442C13794C00FFE0BA /* ModalMapLieu.swift */; };
 		EAE9A0472C137B0B00FFE0BA /* ModalListLieux.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9A0462C137B0B00FFE0BA /* ModalListLieux.swift */; };
+		F56BCC482C2C012300C6DC24 /* ModelFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BCC472C2C012300C6DC24 /* ModelFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcranFiltrage.swift; sourceTree = "<group>"; };
 		EAE9A0442C13794C00FFE0BA /* ModalMapLieu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMapLieu.swift; sourceTree = "<group>"; };
 		EAE9A0462C137B0B00FFE0BA /* ModalListLieux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalListLieux.swift; sourceTree = "<group>"; };
+		F56BCC472C2C012300C6DC24 /* ModelFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				69ED1C5B2C10B7A60050046B /* MainLogoView.swift */,
 				EA88B2522C14D390006A10FD /* Description.swift */,
 				EA88B2542C14D447006A10FD /* ActivityExample.swift */,
+				EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */,
 				696957552C110CE100FC7BE3 /* MaScreen.swift */,
 				69AD09FB2C2C5DC600A6663B /* AddActivity.swift */,
 				EA88B2562C14D61C006A10FD /* Favorite.swift */,
@@ -155,7 +158,7 @@
 				EA63FBA72C134FB700623DBF /* Log_In.swift */,
 				EA63FBA92C134FDE00623DBF /* Sign_In.swift */,
 				EA88B2602C150306006A10FD /* SheetView.swift */,
-				EAE9A0422C1378A600FFE0BA /* EcranFiltrage.swift */,
+				F56BCC472C2C012300C6DC24 /* ModelFunc.swift */,
 				EAE9A0442C13794C00FFE0BA /* ModalMapLieu.swift */,
 				EAE9A0462C137B0B00FFE0BA /* ModalListLieux.swift */,
 				EA88B2582C14D79E006A10FD /* ActivityFr.swift */,
@@ -371,6 +374,7 @@
 				69710A7D2C0DEB0C00BF25AA /* Item.swift in Sources */,
 				EA32D0E62C2C110900D07F6D /* Utilisateur.swift in Sources */,
 				696957562C110CE100FC7BE3 /* MaScreen.swift in Sources */,
+				F56BCC482C2C012300C6DC24 /* ModelFunc.swift in Sources */,
 				69710A792C0DEB0C00BF25AA /* ActiTradApp.swift in Sources */,
 				EAE9A0432C1378A600FFE0BA /* EcranFiltrage.swift in Sources */,
 				EA63FBAC2C13506D00623DBF /* MainTabView.swift in Sources */,
